@@ -4,6 +4,13 @@ using ConceptsPOO;
 Console.WriteLine("POO Concepts");
 Console.WriteLine("============");
 
-Console.WriteLine(new Date(2020, 2, 11));
-Console.WriteLine(new Date(1974, 9, 23));
-Console.WriteLine(new Date(1985, 18, 45));
+try
+{
+    Console.WriteLine(new Date(2024, 2, 29));
+    Console.WriteLine(new Date(1974, 9, 23));
+    Console.WriteLine(new Date(1985, 11, 31));
+}
+catch (Exception error)
+{
+    Console.WriteLine(error.Message);
+}
